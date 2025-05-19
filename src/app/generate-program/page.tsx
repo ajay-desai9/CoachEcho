@@ -137,6 +137,7 @@ const GenerateProgramPage = () => {
             full_name: fullName,
             user_id: user?.id,
           },
+          
         });
       } catch (error) {
         console.log("Failed to start call", error);
@@ -271,7 +272,7 @@ const GenerateProgramPage = () => {
               {messages.map((msg, index) => (
                 <div key={index} className="message-item animate-fadeIn">
                   <div className="font-semibold text-xs text-muted-foreground mb-1">
-                    {msg.role === "assistant" ? "CodeFlex AI" : "You"}:
+                    {msg.role === "assistant" ? "Coach Echo" : "You"}:
                   </div>
                   <p className="text-foreground">{msg.content}</p>
                 </div>
