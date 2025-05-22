@@ -1,6 +1,24 @@
 
 CoachEcho is a futuristic AI fitness assistant that lets you chat with a voice-enabled trainer to generate personalized workout plans and custom diet suggestions in real time. Built with Next.js, React, Tailwind, and Shadcn UI, it combines Gemini AI, Vapi voice integration, and a Convex database for a seamless experience.This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Setup .env file
+```
+# Clerk Authentication
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+
+# Clerk Redirect URLs
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+
+# Vapi Voice AI
+NEXT_PUBLIC_VAPI_WORKFLOW_ID=
+NEXT_PUBLIC_VAPI_API_KEY=
+
+# Convex Database
+CONVEX_DEPLOYMENT=
+NEXT_PUBLIC_CONVEX_URL=
+```
 ## Getting Started
 
 First, run the development server:
